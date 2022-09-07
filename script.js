@@ -1,0 +1,12 @@
+function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+    }
+}
+
+function CloseSupport(id) {
+    document.getElementById(id).style.display = 'none'
+}
